@@ -4,7 +4,7 @@ task :compile do
 end
 
 desc "Deploy to Github pages"
-task deploy: %w[compile] do
+task :deploy do
   syscall('git checkout gh-pages')
   syscall('git checkout main -- Rakefile')
   syscall('git checkout main -- output')
@@ -29,7 +29,10 @@ end
 
 def syscall(command)
   result = system(command)
-  exit if !result
+  return if result
+
+  print("Failed: #{command}")
+  exit
 end
 
 def continue?(prompt)
