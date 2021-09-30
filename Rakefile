@@ -18,9 +18,9 @@ task :deploy do
   end
   FileUtils.rm_rf('output')
 
-  syscall('ll')
+  syscall('ls -al')
 
-  continue?("Continue? [y, yes]")
+  continue?("Continue? [y, yes] ")
 
   syscall('git add .')
   syscall('git commit')
@@ -38,6 +38,6 @@ end
 def continue?(prompt)
   print(prompt)
   p
-  response = gets.chomp
+  response = $stdin.gets
   exit unless %w[yes y].include?(response)
 end

@@ -18,7 +18,8 @@
     <option name="myRootTask">
       <RakeTaskImpl id="rake">
         <subtasks>
-          <RakeTaskImpl description="Prepare gh-pages branch for deploy" fullCommand="prepare" id="prepare" />
+          <RakeTaskImpl description="Deploy to Github pages" fullCommand="deploy" id="deploy" />
+          <RakeTaskImpl description="" fullCommand="compile" id="compile" />
         </subtasks>
       </RakeTaskImpl>
     </option>
