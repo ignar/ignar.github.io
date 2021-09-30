@@ -3,7 +3,7 @@ task :prepare do
   system('git checkout gh-pages')
   system('git checkout main -- output')
   Dir.foreach(__dir__) do |f|
-    next if %w(. .. .git .idea output Rakefile).include?(f)
+    next if %w(. .. .git .idea output Rakefile CNAME).include?(f)
     FileUtils.rm_rf(f)
   end
   Dir.foreach(File.join(__dir__, 'output')) do |f|
