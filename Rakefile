@@ -38,6 +38,6 @@ end
 def continue?(prompt)
   print(prompt)
   p
-  response = $stdin.gets
+  response = $stdin.gets.chomp
   exit unless %w[yes y].include?(response)
 end
