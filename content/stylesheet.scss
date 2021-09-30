@@ -1,0 +1,54 @@
+#cover-container {
+  background-color: #234c68;
+
+  #home-card {
+    max-width: 42em;
+  }
+
+  main {
+    margin: auto;
+  }
+
+  .head .profile-image {
+    background-image: url("/assets/images/artem-sqr.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 22em;
+
+    @media (min-width: 992px) {
+      padding-bottom: 27em;
+      background-size: cover;
+    }
+  }
+
+  .head .headline {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .head .headline h1 {
+    font-size: 16px;
+  }
+
+  .head .headline h2 {
+    font-size: 12px;
+  }
+
+  .content {
+    background-color: #fff;
+
+    .lead {
+      font-size: 1rem;
+
+      &.position {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
