@@ -1,7 +1,13 @@
-desc "Prepare gh-pages branch for deploy"
-task :prepare do
-  system('git checkout gh-pages')
-  system('git checkout main -- output')
+task :compile do
+  syscall('bundle')
+  syscall('bundle exec nanoc')
+end
+
+desc "Deploy to Github pages"
+task deploy: %w[compile] do
+  syscall('git checkout gh-pages')
+  syscall('git checkout main -- Rakefile')
+  syscall('git checkout main -- output')
   Dir.foreach(__dir__) do |f|
     next if %w(. .. .git .idea output Rakefile CNAME).include?(f)
     FileUtils.rm_rf(f)
@@ -11,11 +17,24 @@ task :prepare do
     FileUtils.cp_r(File.join(__dir__, 'output', f), File.join(__dir__, f))
   end
   FileUtils.rm_rf('output')
+
+  syscall('ll')
+
+  continue?("Continue? [y, yes]")
+
+  syscall('git add .')
+  syscall('git commit')
+  syscall('git push origin gh-pages')
 end
 
-desc "Commit and deploy"
-task :deploy do
-  system('git add .')
-  system('git commit')
-  system('git push origin gh-pages')
+def syscall(command)
+  result = system(command)
+  exit if !result
+end
+
+def continue?(prompt)
+  print(prompt)
+  p
+  response = gets.chomp
+  exit unless %w[yes y].include?(response)
 end
