@@ -4,7 +4,7 @@ share: true
 Being a leader is a work
 So here is an article that somehow formalizes principles that I was follow
 
-[Source](https://acjay.com/2022/03/11/11-principles-of-engineering-management/) [Leadership](Leadership.md)
+[Source](https://acjay.com/2022/03/11/11-principles-of-engineering-management/) [[Leadership]]
 
 # The Principles
 
