@@ -18,7 +18,7 @@ compile '/**/*.erb.html' do
 end
 
 compile '/**/*.md' do
- filter :kramdown
+ filter :kramdown, input: 'GFMWikiLink'
  layout '/default.*'
 
  if item.identifier =~ '**/index.*'
@@ -53,6 +53,9 @@ route '/assets/images/*' do
 end
 compile '/assets/images/*' do
 
+end
+route '/**/*.md' do
+  item.identifier.without_ext + '.html'
 end
 
 layout '/**/*', :erb
