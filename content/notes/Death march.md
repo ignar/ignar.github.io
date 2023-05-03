@@ -9,6 +9,6 @@ While death marches are sometimes seen as a necessary evil in product management
 
 ###### Colophon
 ----
-Status: [Serving](Serving.md)
+Status: [Serving](./Serving.md)
 
 ---
