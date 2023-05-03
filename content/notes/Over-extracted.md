@@ -5,4 +5,4 @@ In the coffee brewing metaphor for article writing, "over-extracted" refers to a
 
 When an article is over-extracted, it can become overly complicated, convoluted, or excessively long. This issue can stem from the writer's desire to include too much detail or too many irrelevant points. Over-extraction can also occur when a writer becomes too attached to their work, continually revising and refining, to the point where the article loses its original intent and focus.
 
-The epistemic status of my notes falls into five non-linear levels: [Roasting](Roasting.md) -> [Grinding](Grinding.md) -> [Brewing](Brewing.md) -> [Serving](Serving.md) -> [Over-extracted](Over-extracted.md) -> [In-the-sink](In-the-sink.md)
+The epistemic status of my notes falls into five non-linear levels: [Roasting](./Roasting.md) -> [Grinding](./Grinding.md) -> [Brewing](./Brewing.md) -> [Serving](./Serving.md) -> [Over-extracted](Over-extracted.md) -> [In-the-sink](./In-the-sink.md)
