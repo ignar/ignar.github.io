@@ -5,13 +5,13 @@ In the coffee brewing metaphor for article writing, "over-extracted" refers to a
 
 When an article is over-extracted, it can become overly complicated, convoluted, or excessively long. This issue can stem from the writer's desire to include too much detail or too many irrelevant points. Over-extraction can also occur when a writer becomes too attached to their work, continually revising and refining, to the point where the article loses its original intent and focus.
 
-The epistemic status of my notes falls into five non-linear levels: [[Roasting]] -> [[Grinding]] -> [[Brewing]] -> [[Serving]] -> [[Over-extracted]] -> [[In-the-sink]]
+The epistemic status of my notes falls into five non-linear levels: [[./Roasting|Roasting]] -> [[./Grinding|Grinding]] -> [[./Brewing|Brewing]] -> [[./Serving|Serving]] -> [[Over-extracted|Over-extracted]] -> [[./In-the-sink|In-the-sink]]
 
 ---
-- [[10 Colophon/Brewing.md|10 Colophon → Brewing]]
-- [[10 Colophon/Grinding.md|10 Colophon → Grinding]]
-- [[10 Colophon/In-the-sink.md|10 Colophon → In-the-sink]]
-- [[10 Colophon/Over-extracted.md|10 Colophon → Over-extracted]]
-- [[10 Colophon/Roasting.md|10 Colophon → Roasting]]
-- [[10 Colophon/Serving.md|10 Colophon → Serving]]
-- [[90 Templates/Colophon Template.md|90 Templates → Colophon Template]]
+- [[./Brewing|10 Colophon → Brewing]]
+- [[./Grinding|10 Colophon → Grinding]]
+- [[./In-the-sink|10 Colophon → In-the-sink]]
+- [[Over-extracted|10 Colophon → Over-extracted]]
+- [[./Roasting|10 Colophon → Roasting]]
+- [[./Serving|10 Colophon → Serving]]
+- [[Colophon Template|90 Templates → Colophon Template]]
