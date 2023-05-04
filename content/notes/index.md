@@ -1,5 +1,6 @@
 ---
 share: true
+ignore: true
 ---
 [[I work]].
 
@@ -12,4 +13,3 @@ share: true
 - [[40 Management/11 Principles of Engineering Management.md|40 Management/11 Principles of Engineering Management.md]]
 - [[40 Management/Death march.md|40 Management/Death march.md]]
 - [[60 Knowledge/Tasks Prioritization.md|60 Knowledge/Tasks Prioritization.md]]
-- [[index.md|index.md]]
