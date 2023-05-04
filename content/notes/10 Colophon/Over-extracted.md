@@ -8,12 +8,10 @@ When an article is over-extracted, it can become overly complicated, convoluted,
 The epistemic status of my notes falls into five non-linear levels: [[Roasting]] -> [[Grinding]] -> [[Brewing]] -> [[Serving]] -> [[Over-extracted]] -> [[In-the-sink]]
 
 ---
-| Note                                                                     |
-| ------------------------------------------------------------------------ |
-| [[10 Colophon/Brewing.md\|10 Colophon/Brewing.md]]                       |
-| [[10 Colophon/Grinding.md\|10 Colophon/Grinding.md]]                     |
-| [[10 Colophon/In-the-sink.md\|10 Colophon/In-the-sink.md]]               |
-| [[10 Colophon/Over-extracted.md\|10 Colophon/Over-extracted.md]]         |
-| [[10 Colophon/Roasting.md\|10 Colophon/Roasting.md]]                     |
-| [[10 Colophon/Serving.md\|10 Colophon/Serving.md]]                       |
-| [[90 Templates/Colophon Template.md\|90 Templates/Colophon Template.md]] |
+- [[10 Colophon/Brewing.md|10 Colophon → Brewing]]
+- [[10 Colophon/Grinding.md|10 Colophon → Grinding]]
+- [[10 Colophon/In-the-sink.md|10 Colophon → In-the-sink]]
+- [[10 Colophon/Over-extracted.md|10 Colophon → Over-extracted]]
+- [[10 Colophon/Roasting.md|10 Colophon → Roasting]]
+- [[10 Colophon/Serving.md|10 Colophon → Serving]]
+- [[90 Templates/Colophon Template.md|90 Templates → Colophon Template]]
