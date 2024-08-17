@@ -1,0 +1,40 @@
+body {
+  font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; }
+
+h2 {
+  font-size: large; }
+
+#cover-container {
+  background-color: #234c68; }
+  #cover-container #home-card {
+    max-width: 42em; }
+  #cover-container main {
+    margin: auto; }
+  #cover-container .head .profile-image {
+    background-image: url("/assets/images/artem-sqr.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 22em; }
+    @media (min-width: 992px) {
+      #cover-container .head .profile-image {
+        padding-bottom: 27em;
+        background-size: cover; } }
+  #cover-container .head .headline {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+    text-shadow: 1px 1px 2px black; }
+  #cover-container .head .headline h1 {
+    font-size: 16px; }
+  #cover-container .head .headline h2 {
+    font-size: 12px; }
+  #cover-container .content {
+    background-color: #fff; }
+    #cover-container .content .lead {
+      font-size: 1rem; }
+      #cover-container .content .lead.position {
+        font-size: 0.9rem; }
