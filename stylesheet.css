@@ -1,40 +1,71 @@
 body {
-  font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; }
-
-h2 {
-  font-size: large; }
-
-#cover-container {
+  font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   background-color: #234c68; }
-  #cover-container #home-card {
-    max-width: 42em; }
-  #cover-container main {
-    margin: auto; }
-  #cover-container .head .profile-image {
-    background-image: url("/assets/images/artem-sqr.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    padding-bottom: 22em; }
-    @media (min-width: 992px) {
-      #cover-container .head .profile-image {
-        padding-bottom: 27em;
-        background-size: cover; } }
-  #cover-container .head .headline {
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    width: 100%;
-    padding: 20px;
-    text-shadow: 1px 1px 2px black; }
-  #cover-container .head .headline h1 {
-    font-size: 16px; }
-  #cover-container .head .headline h2 {
-    font-size: 12px; }
-  #cover-container .content {
-    background-color: #fff; }
-    #cover-container .content .lead {
-      font-size: 1rem; }
-      #cover-container .content .lead.position {
-        font-size: 0.9rem; }
+
+#cover-container #home-card {
+  max-width: 42em; }
+#cover-container main {
+  margin: auto; }
+#cover-container dl, #cover-container dt, #cover-container dd {
+  margin: 0;
+  padding: 0; }
+#cover-container h2 {
+  font-weight: 400;
+  font-size: 1rem; }
+#cover-container dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-columns: auto 5px auto;
+  grid-template-rows: auto [last-line];
+  grid-auto-rows: min-content;
+  position: relative;
+  grid-gap: 1rem; }
+#cover-container dl > dt:first-child::after {
+  display: inline;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 1rem; }
+#cover-container dl > dt {
+  font-weight: normal;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: start;
+  justify-self: left;
+  text-align: left; }
+#cover-container dl > dd {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-self: center;
+  justify-self: start; }
+#cover-container .head .profile-image {
+  background-image: url("/assets/images/artem-sqr.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-bottom: 22em; }
+  @media (min-width: 992px) {
+    #cover-container .head .profile-image {
+      padding-bottom: 27em;
+      background-size: cover; } }
+#cover-container .head .headline {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  width: 100%;
+  padding: 20px;
+  text-shadow: 1px 1px 2px black; }
+#cover-container .head .headline h1 {
+  font-size: 16px; }
+#cover-container .head .headline h2 {
+  font-size: 12px; }
+#cover-container .content {
+  background-color: #fff; }
+  #cover-container .content .lead {
+    font-size: 1rem; }
+    #cover-container .content .lead.position {
+      font-size: 0.9rem; }
