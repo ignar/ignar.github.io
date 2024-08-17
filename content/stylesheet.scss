@@ -1,20 +1,62 @@
 body {
   font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-}
-
-h2 {
-  font-size: large;
+  background-color: #234c68;
 }
 
 #cover-container {
-  background-color: #234c68;
-
   #home-card {
     max-width: 42em;
   }
 
   main {
     margin: auto;
+  }
+
+  // inspired by https://stackoverflow.com/questions/71851532/dl-element-with-dt-dd-as-equal-column-widths-on-one-row
+  dl, dt, dd {
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto 5px auto;
+    grid-template-rows: auto [last-line];
+    grid-auto-rows: min-content;
+    position: relative;
+    grid-gap: 1rem;
+  }
+  dl > dt:first-child::after {
+    display: inline;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 1rem;
+  }
+  dl > dt {
+    font-weight: normal;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    align-self: start; 
+    justify-self: left;
+    text-align: left;
+  }
+  dl > dd {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    grid-column-start: 3;
+    grid-column-end: 4;
+  
+    align-self: center; 
+    justify-self: start;
   }
 
   .head .profile-image {
