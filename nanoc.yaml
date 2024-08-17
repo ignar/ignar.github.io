@@ -16,3 +16,10 @@ environments:
     base_url: https://melnykov.dev
 
 name: Melnykov
+
+deploy:
+  default:
+    kind: git
+    remote: git@github.com:ignar/ignar.github.io.git
+    branch: gh-pages
+    forced: true

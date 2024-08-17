@@ -1,3 +1,9 @@
+body {
+  font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; }
+
+h2 {
+  font-size: large; }
+
 #cover-container {
   background-color: #234c68; }
   #cover-container #home-card {
