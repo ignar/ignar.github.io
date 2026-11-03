@@ -12,7 +12,7 @@ bundle exec nanoc compile -W
 bundle exec nanoc view -L
 ```
 
-The profile links under the intro (github, linkedin, email) are set in
+The profile links under the intro (github, linkedin, x, email) are set in
 `nanoc.yaml` under `links`. A link with no `url` is not shown.
 
 The diagrams at the top of the page are drawn by `content/assets/js/figures.js`.

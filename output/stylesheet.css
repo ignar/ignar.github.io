@@ -412,9 +412,12 @@ a:focus-visible {
     column-gap: 10px;
     row-gap: 0;
   }
-  .intro .links a,
   .intro .links span {
     padding: 10px 0;
+  }
+  .intro .links a {
+    padding: 10px 8px;
+    margin: 0 -8px;
   }
   .deflist dt,
   .deflist dd {
