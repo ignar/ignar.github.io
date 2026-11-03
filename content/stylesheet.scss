@@ -458,9 +458,15 @@ a {
     column-gap: 10px;
     row-gap: 0;
 
-    a,
     span {
       padding: 10px 0;
+    }
+
+    // Wider tap areas, so a short label such as "x" is easy to hit.
+    // The negative margin keeps the text where it was.
+    a {
+      padding: 10px 8px;
+      margin: 0 -8px;
     }
   }
 
