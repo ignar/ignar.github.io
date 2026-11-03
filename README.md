@@ -1,6 +1,10 @@
 # Development
 
+The site needs the Ruby version in `.ruby-version` (4.0.9). The stylesheet is
+compiled with Dart Sass through `nanoc-dart-sass`.
+
 ```
+bundle install
 bundle exec nanoc compile -W
 ```
 

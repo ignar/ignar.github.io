@@ -1,9 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'nanoc'
-gem 'nanoc-live'
+ruby file: '.ruby-version'
+
+gem 'nanoc', '~> 4.14'
 gem 'adsf'
-gem 'thin'
+gem 'puma'
 gem 'kramdown'
 gem 'pry'
-gem 'sass'
+
+# Nanoc loads the gems in this group as plugins.
+group :nanoc do
+  gem 'nanoc-dart-sass'
+  gem 'nanoc-live'
+end
