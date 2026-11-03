@@ -1,6 +1,6 @@
 ---
 title: Artem Melnykov
-description: Software engineer and engineering manager. Co-founder & CEO @ Investorkite. Previously @ Shopify and VTS.
+description: Engineering manager and engineer. Engineering Leadership @ Remitly. Co-founder & CEO @ Investorkite. Previously @ Shopify.
 ---
 <% links = Array(@config[:links]).select { |link| link[:url] } %>
 <section id="about" class="section section--about">
@@ -11,9 +11,10 @@ description: Software engineer and engineering manager. Co-founder & CEO @ Inves
 
     <div class="intro">
         <h1>Hi, I'm Artem.</h1>
-        <p>Software engineer and engineering manager.</p>
+        <p>Engineering manager and engineer.</p>
+        <p>Engineering Leadership @ Remitly.</p>
         <p>Co-founder &amp; CEO @ Investorkite.</p>
-        <p class="muted">Previously @ Shopify and VTS.</p>
+        <p class="muted">Previously @ Shopify.</p>
         <% if links.any? %>
         <p class="links">
             <%= links.map { |link| %(<a href="#{link[:url]}" rel="me">#{link[:name]}</a>) }.join('<span aria-hidden="true">/</span>') %>
