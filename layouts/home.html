@@ -3,10 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%= @config[:name] %></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title><%= @item[:title] %></title>
+    <meta name="description" content="<%= h(@item[:description]) %>">
+    <meta name="theme-color" content="#fbfbf9">
+    <link rel="canonical" href="<%= @config[:base_url] %>/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= h(@item[:title]) %>">
+    <meta property="og:description" content="<%= h(@item[:description]) %>">
+    <meta property="og:url" content="<%= @config[:base_url] %>/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap">
     <link rel="stylesheet" href="/stylesheet.css">
+    <noscript><style>.figure { display: none; }</style></noscript>
+    <script src="/assets/js/figures.js" defer></script>
     <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/images/android-chrome-192x192.png" sizes="192x192">
@@ -16,24 +26,37 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon.png" >
 </head>
 <body>
-    <div id="cover-container">
-        <div id="home-card" class="d-flex w-100 h-100 p-3 mx-auto flex-column vh-100">
-            <main>
-                <div class="head">
-                    <div class="profile-image position-relative rounded-top">
-                        <div class="headline position-absolute bottom-0 text-center">
-                            <section>
-                                <h1 class="name">Artem Melnykov</h1>
-                                <h2 class="position">Co-founder and CEO of Investorkite</h2>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-                <div class="content p-3 rounded-bottom">
-                    <%= yield %>
-                </div>
-            </main>
+<div id="top" class="page">
+    <header class="site-header">
+        <a class="wordmark" href="#top">artem melnykov</a>
+        <nav class="site-nav" aria-label="Sections">
+            <a href="#about">about</a>
+            <a href="#work">what i do</a>
+            <a href="#philosophy">philosophy</a>
+            <a href="#stack">stack</a>
+        </nav>
+    </header>
+
+    <div class="figure" data-figure>
+        <div class="figure-stage" aria-hidden="true">
+            <div class="figure-canvas" data-figure-canvas></div>
+        </div>
+        <div class="figure-caption">
+            <span data-figure-caption></span>
+            <button type="button" class="figure-next" data-figure-next aria-label="Show another diagram"><span class="figure-next-text">another diagram </span>↻</button>
         </div>
     </div>
+
+    <main class="main">
+        <%= yield %>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <span>© <%= Time.now.year %> Artem Melnykov</span>
+            <a href="#top"><span class="site-footer-long">back to </span>top ↑</a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

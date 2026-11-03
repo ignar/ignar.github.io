@@ -1,25 +1,68 @@
 ---
-title: Melnykov
+title: Artem Melnykov
+description: Software engineer and engineering manager. Co-founder & CEO @ Investorkite. Previously @ Shopify and VTS.
 ---
+<% links = Array(@config[:links]).select { |link| link[:url] } %>
+<section id="about" class="section section--about">
+    <blockquote class="epigraph">
+        <div><span class="type type--1">code for machines,</span></div>
+        <div class="epigraph-last"><span class="type type--2">clarity for people.</span><span class="cursor" aria-hidden="true"></span></div>
+    </blockquote>
 
-<p class="lead">Hello, I’m Artem.</p>
-<p class="lead">As a software engineer who knows how to make magic with two ingredients: machine language and human language.</p>
-<hr />
-<h2>I Do</h2>
-<dl>
-    <dt>Software Development</dt>
-    <dd>I don't just manage — I code. My hands-on approach keeps me connected to the latest trends and challenges in our field.</dd>
-    <dt>Leadership</dt>
-    <dd>I specialize in growing and nurturing technical talent, helping individuals and teams reach their full potential.</dd>
-    <dt>Bridge Building</dt>
-    <dd>I love being at the intersection of technology and people, translating complex technical concepts into actionable strategies.</dd>
-</dl>
-<hr />
-<h2>My Philosophy</h2>
-<p class="lead">I believe in the power of technology to solve real-world problems, and in the power of great teams to create that technology. Whether I'm diving into code or mentoring the next generation of tech leaders, I'm always looking for ways to innovate and improve.</p>
-<hr />
-<h2>Prefferences</h2>
-<p class="lead">I love Ruby, Ruby On Rails, Python, Pandas, Numpy, Algorithms. I do algo trading, and advanced assets portfolio manegement.</p>
-<p class="lead">I start my day with a cup of good coffee.</p>
-<hr />
-<p class="lead">ex. Shopify, ex. VTS</p>
+    <div class="intro">
+        <h1>Hi, I'm Artem.</h1>
+        <p>Software engineer and engineering manager.</p>
+        <p>Co-founder &amp; CEO @ Investorkite.</p>
+        <p class="muted">Previously @ Shopify and VTS.</p>
+        <% if links.any? %>
+        <p class="links">
+            <%= links.map { |link| %(<a href="#{link[:url]}" rel="me">#{link[:name]}</a>) }.join('<span aria-hidden="true">/</span>') %>
+        </p>
+        <% end %>
+    </div>
+</section>
+
+<section id="work" class="section">
+    <h2 class="section-heading"><span class="section-heading-mark" aria-hidden="true">#</span><span>what i do</span><span class="section-heading-rule" aria-hidden="true"></span></h2>
+    <dl class="deflist">
+        <div class="deflist-row">
+            <dt>software development</dt>
+            <dd>I still write code as a manager. It keeps me close to the craft and to the problems my teams actually face.</dd>
+        </div>
+        <div class="deflist-row">
+            <dt>leadership</dt>
+            <dd>Growing technical talent, and helping people and teams reach their full potential.</dd>
+        </div>
+        <div class="deflist-row">
+            <dt>bridge building</dt>
+            <dd>Turning complex technical ideas into practical strategy, between technology and the people it serves.</dd>
+        </div>
+    </dl>
+</section>
+
+<section id="philosophy" class="section">
+    <h2 class="section-heading"><span class="section-heading-mark" aria-hidden="true">#</span><span>philosophy</span><span class="section-heading-rule" aria-hidden="true"></span></h2>
+    <p class="prose">Technology should solve real-world problems, and strong teams are what build it. Whether I'm writing code or mentoring future tech leaders, I'm always looking for the next thing to improve.</p>
+</section>
+
+<section id="stack" class="section">
+    <h2 class="section-heading"><span class="section-heading-mark" aria-hidden="true">#</span><span>stack</span><span class="section-heading-rule" aria-hidden="true"></span></h2>
+    <dl class="deflist deflist--compact">
+        <div class="deflist-row">
+            <dt>languages</dt>
+            <dd>Ruby, Python</dd>
+        </div>
+        <div class="deflist-row">
+            <dt>frameworks</dt>
+            <dd>Ruby on Rails, pandas, NumPy</dd>
+        </div>
+        <div class="deflist-row">
+            <dt>interests</dt>
+            <dd>Algorithms, algorithmic trading, portfolio management</dd>
+        </div>
+        <div class="deflist-row">
+            <dt>mornings</dt>
+            <dd>Good coffee first.</dd>
+        </div>
+    </dl>
+</section>
